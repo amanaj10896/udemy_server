@@ -67,6 +67,14 @@ res.send({
 });
 });
 
+app.get('/projects',(req,res)=>{
+    // res.statusCode=400;
+res.render('projects.hbs',{
+    pageTitle:'Projects',
+    
+
+});
+});
 app.get('/help',(req,res)=>{
     // res.statusCode=400;
 res.send('/help');
