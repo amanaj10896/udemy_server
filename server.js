@@ -62,7 +62,7 @@ res.render('about.hbs',{
 app.get('/bad',(req,res)=>{
     // res.statusCode=400;
 res.send({
-    error:"invalid req",
+    error:"invalid request",
 
 });
 });
