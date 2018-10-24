@@ -1,7 +1,7 @@
 var express = require('express');
 var hbs= require('hbs');
 var fs = require('fs');
-
+var port = process.env.PORT|| 3100;
 var app = express();
 
 
@@ -71,6 +71,6 @@ app.get('/help',(req,res)=>{
     // res.statusCode=400;
 res.send('/help');
 });
-app.listen(3100,()=>{
-    console.log("server started");
+app.listen(port,()=>{
+    console.log(`server started at ${port}`);
 });
